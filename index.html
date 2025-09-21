@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alash Quest</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="terminal">
+            <div class="terminal-header">
+                <div class="terminal-buttons">
+                    <span class="btn close"></span>
+                    <span class="btn minimize"></span>
+                    <span class="btn maximize"></span>
+                </div>
+                <div class="terminal-title">ALASH_QUEST.exe</div>
+            </div>
+            
+            <div class="terminal-body">
+                <div class="ascii-art">
+                    <pre>
+    █████╗ ██╗      █████╗ ███████╗██╗  ██╗
+   ██╔══██╗██║     ██╔══██╗██╔════╝██║  ██║
+   ███████║██║     ███████║███████╗███████║
+   ██╔══██║██║     ██╔══██║╚════██║██╔══██║
+   ██║  ██║███████╗██║  ██║███████║██║  ██║
+   ╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝
+   
+   ██████╗ ██╗   ██╗███████╗███████╗████████╗
+   ██╔══██╗██║   ██║██╔════╝██╔════╝╚══██╔══╝
+   ██████╔╝██║   ██║█████╗  ███████╗   ██║   
+   ██╔══██╗██║   ██║██╔══╝  ╚════██║   ██║   
+   ██║  ██║╚██████╔╝███████╗███████║   ██║   
+   ╚═╝  ╚═╝ ╚═════╝ ╚══════╝╚══════╝   ╚═╝   
+                    </pre>
+                </div>
+                
+                <div class="quest-info">
+                    <div class="line">
+                        <span class="prompt">root@alash:~$</span> 
+                        <span class="command">./initiate_quest.sh</span>
+                    </div>
+                    <div class="output">
+                        <p class="glitch-text">[SYSTEM] Quest initialized...</p>
+                        <p class="glitch-text">[STATUS] Mission parameters loaded</p>
+                        <p class="glitch-text">[TARGET] Objective: Find the hidden truth</p>
+                    </div>
+                    
+                    <div class="math-section">
+                        <div class="line">
+                            <span class="prompt">root@alash:~$</span> 
+                            <span class="command">solve_equation.sh</span>
+                        </div>
+                        <div class="output math-problem">
+                            <p>Solve for x: <span id="mathEquation">2x + 5 = 13</span></p>
+                            <p>Enter your answer: <input type="number" id="mathAnswer" placeholder="x = ?"></p>
+                            <button id="checkAnswer">Check Answer</button>
+                            <div id="mathResult"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="hint-section" id="hintSection" style="display: none;">
+                        <div class="line">
+                            <span class="prompt">root@alash:~$</span> 
+                            <span class="command">cat hint.txt</span>
+                        </div>
+                        <div class="output hint">
+                            <p class="blink">Hint: maybe search console??</p>
+                        </div>
+                    </div>
+                    
+                    <div class="interactive-section">
+                        <div class="line">
+                            <span class="prompt">root@alash:~$</span> 
+                            <input type="text" id="commandInput" placeholder="Enter command..." autocomplete="off">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="matrix-rain" id="matrixRain"></div>
+            </div>
+        </div>
+        
+        <div class="scanlines"></div>
+        <div class="glitch-overlay"></div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
