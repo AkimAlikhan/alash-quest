@@ -212,7 +212,15 @@ function processCommand(command, terminalBody, commandInput) {
 function typeWriter(text, container) {
     const output = document.createElement('div');
     output.className = 'output';
-    container.insertBefore(output, document.getElementById('commandInput').parentElement);
+    
+    // Find the command input element safely
+    const commandInput = document.getElementById('commandInput');
+    if (commandInput && commandInput.parentElement) {
+        container.insertBefore(output, commandInput.parentElement);
+    } else {
+        // Fallback: just append to the container
+        container.appendChild(output);
+    }
     
     let i = 0;
     const timer = setInterval(() => {
