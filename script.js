@@ -235,7 +235,8 @@ function typeWriter(text, container) {
 
 // Add some console messages for the quest
 console.log("Жауап: Оян, қазақ!");
-console.log("Ответ: Оян, қазақ!")
+console.log("Ответ: Оян, қазақ!");
+console.log("Test: Website updated at " + new Date().toLocaleTimeString());
 // Simple right-click prevention
 document.addEventListener('contextmenu', function(e) {
     e.preventDefault();
