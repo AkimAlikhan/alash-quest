@@ -226,12 +226,8 @@ function typeWriter(text, container) {
 }
 
 // Add some console messages for the quest
-console.log('%c🎯 ALASH QUEST - CONSOLE DISCOVERED!', 'color: #00ff00; font-size: 16px; font-weight: bold;');
-console.log('%c🔍 You found the hidden console area!', 'color: #00ff00; font-size: 12px;');
-console.log('%c🏆 Quest Status: CONSOLE ACCESS GRANTED', 'color: #ff0000; font-size: 14px; font-weight: bold;');
-console.log('%c💡 Hint: The search console holds the key to the quest!', 'color: #ffff00; font-size: 12px;');
-console.log("Оян, қазақ!");
-
+console.log("Жауап: Оян, қазақ!");
+console.log("Ответ: Оян, қазақ!")
 // Simple right-click prevention
 document.addEventListener('contextmenu', function(e) {
     e.preventDefault();
